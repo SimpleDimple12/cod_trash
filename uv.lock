@@ -1,0 +1,23 @@
+version = 1
+revision = 5
+requires-python = ">=3.13"
+
+[[package]]
+name = "pamdas"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ac/9c/e75c6582982ec2671f39b055145086ad0b96f219e2af7dc7e88fa81c21e9/pamdas-0.1.0.tar.gz", hash = "sha256:6e3b270c37ce0db93849f90c9ebee05168903aa3b36ac7f37e4320d3007cdbd7", size = 2238, upload-time = "2025-06-10T18:04:43.801Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c6/76/f771e4626fd4ed13a26a664521d6008a1587dedf8d9c9e19d359accc20b1/pamdas-0.1.0-py3-none-any.whl", hash = "sha256:f76843afb1283e889e49cb7439385fe2aced16812eba76019c8429058c855d95", size = 2918, upload-time = "2025-06-10T18:04:42.142Z" },
+]
+
+[[package]]
+name = "trash"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "pamdas" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pamdas", specifier = ">=0.1.0" }]
